@@ -273,5 +273,25 @@
             <li>The most common reason why people use span elements is so that they can control the appearance of the content of these elements using CSS.</li>
         </ol>
         <iframe width="450" height="350" src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" seamless></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sh6lK57Cuk4?si=0wzYn_9S4c3tDGu2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Video Element</h3>
+        <video src="videos/2.mp4" poster="images/num2.png" width="300" height="200" preload="auto" controls loop>Test videos extracted from Indie Cross.</video>
+        <video src="videos/3.mp4" poster="images/num3.png" width="300" height="400" preload="auto" controls autoplay>This one is with autoplay enabled. Okay autoplay doesn't work in all browsers.</video>
+        <p>Multiple video sources</p>
+        <video poster="images/num4.png" width="500" height="500" controls preload="auto" loop>
+            <source src="videos/4.mp4" type="video/mp4">
+            Also anything written here will not be displayed by the browser if all goes well.
+        </video>
+        <h3>Audio Element</h3>
+        <ol>
+            <li><audio src="audios/badtime.ogg" preload="metadata" controls loop>This browser does not support the audio element.</audio></li>
+            <li><audio src="audios/knockout.ogg" preload="none" controls loop autoplay>This browser does not support the audio element.</audio></li>
+            <li>
+                <audio preload="auto" controls loop>
+                    <source src="audios/terriblesin.ogg" type="audio/ogg">
+                    <p>This browser does not support the audio element.</p>
+                </audio>
+            </li>
+        </ol>
     </body>
 </html>
