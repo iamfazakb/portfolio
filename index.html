@@ -1,7 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
     <head>
         <title>Hello, World!</title>
+        <!-- You should define your document's character set. -->
+        <meta charset="utf-8" />
+        <!--
+        Finally, you should always add the viewport meta tag into your HTML <head> to give the code example a better chance of working on mobile devices.
+        You should include at least the following in your document, which can be modified later on as the need arises:
+        -->
+        <meta name="viewport" content="width=device-width" />
         <!--
         The meta element lives inside the head element and contains information about that web page.
         The most common attributes are the name and content attributes, which tend to be used together.
@@ -27,24 +34,25 @@
         <!-- This prevents the browser from caching the page. (That is, storing it locally to save time downloading it on subsequent visits.) -->
         <meta name="http-equiv" content="expire">
         <!-- Because browsers often cache the content of a page, the expires option can be used to indicate when the page should expire. -->
+        <link  href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <h1>Welcome to Fazal's Website!</h1>
+        <h1 id="id1">Welcome to Fazal's Website!</h1>
         <h3 id="top">Header3</h3>
-        <p>Paragraph, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima saepe natus eum impedit. Alias fuga necessitatibus nemo laudantium, corporis a quae ad, voluptas nisi eligendi cupiditate pariatur maiores ipsum possimus.</p>
-        <p>Paragraph bold,<b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eum odio cum, neque ratione, fuga natus vitae ducimus pariatur dolore quam et aliquam similique illum voluptatibus. Facilis laboriosam harum optio.</b></p>
-        <p>Paragraph italic,<i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in enim, magni consequuntur omnis deserunt quia itaque doloremque ad eius vitae tenetur vero numquam illo veniam delectus eum ipsam iure?</i></p>
-        <p>Paragraph superscript,<sup>Lorem ipsum</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam nisi, dolorem vitae reiciendis ea laudantium atque vero hic excepturi sit minus vel fugit earum recusandae, perferendis officiis consectetur ut!</p>
-        <p>Paragraph subscript, Lorem ipsum<sub>Lorem ipsum</sub> dolor sit amet consectetur adipisicing elit. Asperiores doloremque eligendi doloribus sit eveniet nisi vero numquam suscipit, odio, incidunt, nemo excepturi animi corrupti eum ipsam iusto deleniti voluptatum accusamus.</p>
-        <p>Line break.<br>It works like a new line character from C.</p>
+        <p class="lorems">Paragraph, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima saepe natus eum impedit. Alias fuga necessitatibus nemo laudantium, corporis a quae ad, voluptas nisi eligendi cupiditate pariatur maiores ipsum possimus.</p>
+        <p class="lorems">Paragraph bold,<b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eum odio cum, neque ratione, fuga natus vitae ducimus pariatur dolore quam et aliquam similique illum voluptatibus. Facilis laboriosam harum optio.</b></p>
+        <p class="lorems">Paragraph italic,<i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in enim, magni consequuntur omnis deserunt quia itaque doloremque ad eius vitae tenetur vero numquam illo veniam delectus eum ipsam iure?</i></p>
+        <p class="lorems">Paragraph superscript,<sup>Lorem ipsum</sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam nisi, dolorem vitae reiciendis ea laudantium atque vero hic excepturi sit minus vel fugit earum recusandae, perferendis officiis consectetur ut!</p>
+        <p class="lorems">Paragraph subscript, Lorem ipsum<sub>Lorem ipsum</sub> dolor sit amet consectetur adipisicing elit. Asperiores doloremque eligendi doloribus sit eveniet nisi vero numquam suscipit, odio, incidunt, nemo excepturi animi corrupti eum ipsam iusto deleniti voluptatum accusamus.</p>
+        <p class="lorems">Line break.<br>It works like a new line character from C.</p>
         <hr>
         <p>Horizontal rule.</p>
-        <p>Paragraph strong, This is used to indicate that the contents of the element are very important.<strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam excepturi tempora soluta? Quae nostrum velit minus fuga nesciunt soluta, eligendi quaerat inventore harum ex vero pariatur numquam dolorum quidem.</strong></p>
-        <p>Paragraph emphasis, This element indicates emphasis that subtly changes the meaning of a sentence.<em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero ipsa magni voluptate tenetur dolores enim earum. Sint, ex, corrupti ullam, vitae quos accusantium quidem animi id hic qui quo!</em></p>
+        <p id="pdf-test">Paragraph strong, This is used to indicate that the contents of the element are very important.<strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam excepturi tempora soluta? Quae nostrum velit minus fuga nesciunt soluta, eligendi quaerat inventore harum ex vero pariatur numquam dolorum quidem.</strong></p>
+        <p id="rgb-test">Paragraph emphasis, This element indicates emphasis that subtly changes the meaning of a sentence.<em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero ipsa magni voluptate tenetur dolores enim earum. Sint, ex, corrupti ullam, vitae quos accusantium quidem animi id hic qui quo!</em></p>
         <blockquote cite="https://www.lorem.com">
             <p>Blockquote element is used when a quote makes up an entire paragraph. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae reprehenderit aliquid in harum asperiores vitae nihil ex corporis iusto dolor! Praesentium repudiandae voluptates, maiores recusandae doloremque fugiat tenetur quisquam. Numquam?</p>
         </blockquote>
-        <p>Quote element is used to indicate quotes. <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor quia aut debitis repellat, aliquam fuga ad maiores quis suscipit, error nemo soluta voluptatem! Molestiae esse sapiente rem iste illum?</q></p>
+        <p id="hex-test">Quote element is used to indicate quotes. <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor quia aut debitis repellat, aliquam fuga ad maiores quis suscipit, error nemo soluta voluptatem! Molestiae esse sapiente rem iste illum?</q></p>
         <p>Abbreviation is used to spell out full form of an acronym. Like <abbr title="Professor">Prof</abbr> or <abbr title="National Aeronatics And Space America">NASA</abbr></p>
         <p>Cite element is used when you are referencing a piece of work such as a book, film or research paper. <cite>The heart does not care what the closed blood vessel does.</cite></p>
         <p>Define element is used when you first time use an instance of a term in a document which you define later on. <dfn>Black holes</dfn> are extreamly dense bundles of matter and energy.</p>
